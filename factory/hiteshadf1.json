@@ -1,0 +1,15 @@
+{
+	"name": "hiteshadf1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "77447332-881a-485b-9924-d840c077d4fe",
+		"tenantId": "ef695d67-8e26-478d-a452-00a76f98d24e"
+	}
+}
