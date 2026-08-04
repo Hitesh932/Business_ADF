@@ -1,0 +1,29 @@
+{
+	"name": "Table_Data_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().table_name",
+					"type": "Expression"
+				},
+				"folderPath": "bronze",
+				"fileSystem": "adfproj"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

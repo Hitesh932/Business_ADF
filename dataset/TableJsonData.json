@@ -1,0 +1,27 @@
+{
+	"name": "TableJsonData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tables.json",
+				"folderPath": "sample",
+				"container": "adfproj"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"tableName": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
